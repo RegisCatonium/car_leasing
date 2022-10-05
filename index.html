@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Калькулятор лизинга авто</title>
+	<meta name="description" content="Калькулятор лизинга авто">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="libs/noUiSlider/nouislider.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+	<section class="container">
+		<h1 class="title">Рассчитайте стоимость автомобиля в лизинг</h1>
+
+		<form action="#" class="calc" id="form">
+			<div class="calc__item calc__item-input">
+				<p class="calc__text">Стоимость автомобиля</p>
+				<span class="calc__span calc__span_price">
+					<input class="calc__input" type="tel" id="input-price" name="prise" value="3300000" maxlength="10">
+				</span>
+				<div class="calc__slider" id="slider-price"></div>
+				<!-- <input type="range" class="calc__range" min="1000000" max="6000000" value="3 300 000"> -->
+			</div>
+
+			<div class="calc__item calc__item-input">
+				<p class="calc__text">Первоначальный взнос</p>
+				<!-- <span class="calc__span calc__span_percent">
+					<input type="tel" id="input-downpayment" name="percent" value="420000">
+				</span> -->
+				<label class="calc__span calc__span_percent" for="input-downpayment">
+					<output class="calc__input" id="output-downpayment">249000</output>
+					<input class="calc__input-percent" type="tel" id="input-downpayment" name="percent" value="13" min="0" max="100" maxlength="3">
+				</label>
+				<div class="calc__slider" id="slider-percent"></div>
+
+				<!-- <input type="range" class="calc__range" min="0" max="100" value="13"> -->
+			</div>
+
+			<div class="calc__item calc__item-input">
+				<p class="calc__text">Срок лизинга</p>
+				<span class="calc__span calc__span_term">
+					<input class="calc__input" type="tel" id="input-term" name="term" value="60" maxlength="3">
+				</span>
+				<div class="calc__slider" id="slider-term"></div>
+
+				<!-- <input type="range" class="calc__range" min="1" max="60" value="60"> -->
+			</div>
+
+			<div class="calc__item calc__item-out-1">
+				<p class="calc__text">Сумма договора лизинга</p>
+				<output type="tel" class="calc__output" name="total-cost" id="total-cost">4 467 313 ₽</output>
+			</div>
+			<div class="calc__item calc__item-out-2">
+				<p class="calc__text">Ежемесячный платеж от</p>
+				<output type="tel" class="calc__output" name="months-payment" id="months-payment">114 455 ₽</output>
+			</div>
+
+			<button class="btn calc__btn" type="submit">Оставить заявку</button>
+		</form>
+	</section>
+
+	<script src="libs/cleaveJS/cleave.min.js"></script>
+	<script src="libs/noUiSlider/nouislider.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
