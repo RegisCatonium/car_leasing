@@ -224,10 +224,10 @@ document.addEventListener('DOMContentLoaded', function() {
 			// const list = JSON.stringify(data)
 
 
-			console.log(form)
+// 			console.log(form)
 			// console.log(JSON.stringify(form))
-			console.log(formData)
-			console.log(JSON.stringify(formData))
+// 			console.log(formData)
+// 			console.log(JSON.stringify(formData))
 			// console.log(list)
 	
 			// const list = JSON.stringify(data)
