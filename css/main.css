@@ -117,8 +117,8 @@ body {
 .calc__span_percent::after {
   content: '%';
   font-size: 2rem;
-  top: 2.6rem;
-  right: 1.4rem;
+  top: 2.4rem;
+  right: 1.6rem;
 }
 
 .calc__span_term::after {
@@ -168,7 +168,7 @@ body {
   background-color: #EBEBEC;
   border-radius: 1.6rem;
   position: absolute;
-  top: .9rem;
+  top: .7rem;
   right: .7rem;
   border: none;
   outline: none;

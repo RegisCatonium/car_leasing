@@ -52,7 +52,6 @@
   }
   .calc__span_percent::after {
     top: 1.8rem;
-    right: 1.6rem;
   }
   .calc__input {
     font-size: 2.2rem;
